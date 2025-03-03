@@ -1,5 +1,12 @@
 # Movie Cards
 
+<details open>
+<summary>Table of content</summary>
+
+- [Regular version](#regular-version)
+- [Edited version that includes Context](#edited-version-including-context)
+</details>
+
 You are going to create a webpage where you can add movie cards. This will be done through a form, where the user can type in a title, rating, genre and a description.
 
 The image at the bottom of this article is just a wireframe, your application should resemble that one but you can _( should? )_ take it to the next level.
@@ -9,12 +16,18 @@ The image at the bottom of this article is just a wireframe, your application sh
   <img src="./add-movie.png" style="padding: 1rem; width: 400px">
 </figure>
 
-### Requirements of the application
+[Back to the top](#movie-cards)
+
+## Requirements of the application
 
 - **Title**, is an `<input>` field of the type text.
 - **Rating**, is an `<input>` of the type range.
 - **Genre**, is a `select` element with several `<option>` _( dropdown )_.
 - **Description**, is a `<textarea>`.
+
+[Back to the top](#movie-cards)
+
+## Regular version
 
 ### Instructions
 
@@ -42,3 +55,15 @@ The image at the bottom of this article is just a wireframe, your application sh
   <figcaption>MovieCard</figcaption>
   <img src="./movie-component.png" style="padding: 1rem; width: 400px">
 </div>
+
+[Back to the top](#movie-cards)
+
+## Edited version including Context
+
+This version of the exercise includes the creating of a Context to own and handle the data manipulation.
+
+Follow the same instructions as the regular version, but instead of passing around props, you set aside all the data inside a `MovieCardContext` instead. The `MovieCardContext` will hold the movie card list, and the logic to update it. You the must wrap you application with the the `MovieCardContext` and use `useContext` inside every component that 'subscribes' to the Context.
+
+Check my example from today's lecture for instructions on how to create it or try it on your own with the help of documentation from the internet.
+
+her is the repo from today _( 20250303 )_: [Today's repo](https://github.com/jensen-frontend-2024/2025-03-03-context-API)
